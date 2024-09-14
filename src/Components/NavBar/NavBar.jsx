@@ -2,20 +2,21 @@ import { CartWidget } from '../CartWidget/CartWidget'
 
 export const NavBar = () => {
   return (
-   <nav>
+   <nav style={{color:"black"}}> 
 
 <div> 🏠regresar el inicio</div> 
 
     <ul>
 
-<li>link 1</li>
-<li>link 2</li>
-<li>link 3</li>
+<li>tarjetas de video</li>
+<li>placas madres</li>
+<li>procesadores </li>
 
     </ul>
 
     <CartWidget/>
 
    </nav>
+  
   )
 }
