@@ -1,22 +1,15 @@
-import { CartWidget } from '../CartWidget/CartWidget'
+import { Link } from "react-router-dom";
+import './NavBar.css';
 
-export const NavBar = () => {
+function NavBar() {
   return (
-   <nav style={{color:"black"}}> 
-
-<div> 🏠regresar el inicio</div> 
-
-    <ul>
-
-<li>tarjetas de video</li>
-<li>placas madres</li>
-<li>procesadores </li>
-
-    </ul>
-
-    <CartWidget/>
-
-   </nav>
-  
-  )
+    <nav>
+      <Link to="/">INICIO</Link>
+      <Link to="/category/men's clothing">ROPA DE HOMBRE</Link>
+      <Link to="/category/women's clothing">ROPA DE MUJER</Link>
+    </nav>
+  );
 }
+
+export default NavBar;
+
